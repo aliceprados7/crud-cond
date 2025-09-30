@@ -1,1 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wgt@300;400;600&display=swap');
+:root{
+  --primary-color: #007bff;
+  --primary-hover-color: #0056b3;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --border-color: #ffffff;
+  --error-color: #dc3545;
+  --sucess-color: #28a745;
+  --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body{
+  margin: 0;
+  font-family: 'Poppins', 'sans-serif';
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.app-container{
+  display: flex;
+  min-height: 100vh;
+}
+
+.content{
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: var(--backgroud-color);
+}
+
+input[type="text"],
+input[type="password"]{
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--backgroud-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+  outline: none;
+  border-color: var(--primary-color);
+}
+button{
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2;
+}
+
+button:hover{
+  background-color: var(--primary-hover-color);
+  transform: translateY(-2px);
+}
